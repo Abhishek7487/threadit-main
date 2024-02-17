@@ -1,8 +1,16 @@
+import styled from "styled-components";
+import GlobalStyles from "./styles/GlobalStyles.js";
+
+const StyledApp = styled.div``;
+
 function App() {
   return (
-    <div>
-      <h1>Hello World!</h1>
-    </div>
+    <>
+      <GlobalStyles />
+      <StyledApp>
+        <h1>Hello World!</h1>
+      </StyledApp>
+    </>
   );
 }
 
