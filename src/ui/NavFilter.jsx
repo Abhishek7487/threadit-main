@@ -35,8 +35,8 @@ const StyledFilter = styled(NavLink)`
   &:active,
   &.active:link,
   &.active:visited {
-    color: var(--color-grey-800);
-    background-color: var(--color-grey-50);
+    color: var(--color-grey-50);
+    background-color: var(--color-primary);
     border-radius: var(--border-radius-sm);
   }
 
@@ -51,7 +51,7 @@ const StyledFilter = styled(NavLink)`
   &:active svg,
   &.active:link svg,
   &.active:visited svg {
-    color: var(--color-brand-600);
+    color: var(--color-grey-50);
   }
 `;
 

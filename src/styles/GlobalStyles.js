@@ -50,10 +50,10 @@ const GlobalStyled = createGlobalStyle`
 --image-opacity: 90%;
   }
   
-  --color-primary: ##ff4500;
+  --color-primary: #ff4500;
 
   --color-secondary-50: #7193FF;
-  --color-secondary-100: ###0079D3;
+  --color-secondary-100: #0079D3;
   
   --color-green-100: #46D160;
   
