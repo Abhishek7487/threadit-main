@@ -1,5 +1,9 @@
+import { useParams } from "react-router-dom";
+
 function Feed() {
-  return <h1>FEED</h1>;
+  const { category } = useParams();
+
+  return <h1>{category}</h1>;
 }
 
 export default Feed;
