@@ -47,7 +47,7 @@ const StyledHeaderActions = styled.div`
 function HeaderActions() {
   return (
     <StyledHeaderActions>
-      <StyledPostCreator to="/feed/create-post">
+      <StyledPostCreator to="/create-post">
         <IoAdd />
         <p>Create post</p>
       </StyledPostCreator>

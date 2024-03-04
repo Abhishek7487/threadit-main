@@ -1,7 +1,7 @@
-import PostTable from "../features/posts/PostsContainer";
+import PostsContainer from "../features/posts/PostsContainer";
 
 function Feed() {
-  return <PostTable />;
+  return <PostsContainer />;
 }
 
 export default Feed;

@@ -40,6 +40,10 @@ const GlobalStyled = createGlobalStyle`
 --color-grey-800: #f3f4f6;
 --color-grey-900: #f9fafb;
 
+--color-red-100: #fee2e2;
+--color-red-700: #b91c1c;
+--color-red-800: #991b1b;
+
 --backdrop-color: rgba(0, 0, 0, 0.3);
 
 --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
@@ -151,6 +155,8 @@ img {
   /* For dark mode */
   filter: grayscale(var(--image-grayscale)) opacity(var(--image-opacity));
 }
+
+
 
 `;
 
