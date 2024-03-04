@@ -2,13 +2,12 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import Heading from "./Heading";
 
-import { IoRocketOutline } from "react-icons/io5";
 import { MdOutlineLocalFireDepartment } from "react-icons/md";
 import { MdOutlineRecentActors } from "react-icons/md";
-import { RiVipCrownLine } from "react-icons/ri";
 import { IoSettingsOutline } from "react-icons/io5";
 import { IoMailOutline } from "react-icons/io5";
 import { FaRegEdit } from "react-icons/fa";
+import { GoHome } from "react-icons/go";
 
 const NavList = styled.ul`
   display: flex;
@@ -76,29 +75,22 @@ function NavFilter() {
       </Heading>
       <NavList>
         <li>
-          <StyledFilter to="/feed/best">
-            <IoRocketOutline />
-            <span>Best</span>
+          <StyledFilter to="/feed/home">
+            <GoHome />
+            <span>Home</span>
           </StyledFilter>
         </li>
         <li>
           <StyledFilter to="/feed/popular">
             <MdOutlineLocalFireDepartment />
 
-            <span>Hot</span>
+            <span>Popular</span>
           </StyledFilter>
         </li>
         <li>
           <StyledFilter to="/feed/new">
             <MdOutlineRecentActors />
             <span>New</span>
-          </StyledFilter>
-        </li>
-        <li>
-          <StyledFilter to="/feed/top">
-            <RiVipCrownLine />
-
-            <span>Top</span>
           </StyledFilter>
         </li>
       </NavList>

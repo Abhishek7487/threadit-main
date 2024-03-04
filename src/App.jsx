@@ -28,7 +28,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route element={<AppLayout />}>
-            <Route index element={<Navigate replace to="/feed/best" />} />
+            <Route index element={<Navigate replace to="/feed/home" />} />
             <Route path="/feed/:category" element={<Feed />} />
             <Route path="/post" element={<Post />} />
             <Route path="/profile" element={<Profile />} />

@@ -7,6 +7,7 @@ const StyledSearchBar = styled.input`
   border-radius: 1rem;
   width: 100%;
   padding: 0.2rem 2.4rem;
+  border-radius: 2rem;
 
   &:focus {
     border: 1px solid var(--color-secondary-50);

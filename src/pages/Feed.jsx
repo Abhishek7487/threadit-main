@@ -1,15 +1,7 @@
-import { useEffect } from "react";
-import { useParams } from "react-router-dom";
-import { getPosts } from "../services/apiPosts";
+import PostTable from "../features/posts/PostTable";
 
 function Feed() {
-  const { category } = useParams();
-
-  useEffect(function () {
-    getPosts().then((data) => console.log(data));
-  }, []);
-
-  return <h1>{category}</h1>;
+  return <PostTable />;
 }
 
 export default Feed;

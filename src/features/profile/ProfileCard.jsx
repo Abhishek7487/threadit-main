@@ -1,8 +1,7 @@
-import styled from "styled-components";
 import { IoIosArrowDown } from "react-icons/io";
+import styled from "styled-components";
 
 const StyledProfileCard = styled.div`
-  justify-self: end;
   display: flex;
   align-items: center;
   gap: 1.2rem;
@@ -13,7 +12,6 @@ const StyledProfileCard = styled.div`
     color: var(--color-grey-500);
   }
 `;
-
 function ProfileCard() {
   return (
     <StyledProfileCard>

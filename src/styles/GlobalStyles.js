@@ -77,7 +77,7 @@ const GlobalStyled = createGlobalStyle`
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 52.5%;
 }
 
 body {
