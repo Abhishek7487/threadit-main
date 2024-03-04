@@ -1,4 +1,4 @@
-import PostTable from "../features/posts/PostTable";
+import PostTable from "../features/posts/PostsContainer";
 
 function Feed() {
   return <PostTable />;
