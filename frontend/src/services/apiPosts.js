@@ -47,3 +47,18 @@ export async function createPost(newPost) {
 
   return data;
 }
+
+export async function updatePostVotes(post) {
+  const updatedPostVotes = post.postVotes++;
+  const { data, error } = await supabase
+    .from("posts")
+    .update({ postVotes: updatedPostVotes })
+    .eq("id", post.id)
+    .select();
+
+  if (error) {
+    throw new Error("Posts could not be created");
+  }
+
+  return data;
+}

@@ -13,7 +13,7 @@ const StyledAppLayout = styled.div`
 
 const Main = styled.main`
   background-color: var(--color-grey-50);
-  padding: 1.6rem;
+  padding: 1.6rem 10rem;
   overflow: scroll;
   /* For WebKit browsers (Chrome, Safari) */
   &::-webkit-scrollbar {
