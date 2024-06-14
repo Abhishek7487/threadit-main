@@ -5,9 +5,6 @@ import Button from "../../ui/Button";
 import FileInput from "../../ui/FileInput";
 import Textarea from "../../ui/Textarea";
 import { useForm } from "react-hook-form";
-import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { createPost } from "../../services/apiPosts";
-import toast from "react-hot-toast";
 import FormRow from "../../ui/FormRow";
 
 const StyledCreatePostForm = styled.form`
@@ -25,21 +22,7 @@ function CreatePostForm() {
   const { register, handleSubmit, reset, formState } = useForm();
   const { errors } = formState;
 
-  const queryClient = useQueryClient();
-
-  const { mutate, isLoading: isCreating } = useMutation({
-    mutationFn: createPost,
-    onSuccess: () => {
-      toast.success("New post successfully created");
-      queryClient.invalidateQueries({ queryKey: ["posts"] });
-      reset();
-    },
-    onError: (err) => toast.error(err.message),
-  });
-
-  function onSubmit(data) {
-    mutate({ ...data, image: data.image[0] });
-  }
+  function onSubmit(data) {}
 
   function onError(errors) {
     console.log(errors);
@@ -84,7 +67,7 @@ function CreatePostForm() {
         <Button variation="secondary" type="reset">
           Cancel
         </Button>
-        <Button disabled={isCreating}>Create Post</Button>
+        <Button>Create Post</Button>
       </FormRow>
     </StyledCreatePostForm>
   );
